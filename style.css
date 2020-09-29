@@ -1,0 +1,96 @@
+.logo img{
+    width:300px;
+}
+
+.menu {
+    width:100%;
+    height:60px;
+    background-color: black;
+}
+
+.menu li{
+    float:left;
+    list-style-type: none;
+    padding-right: 40px;
+    color:white;
+    line-height: 60px;
+}
+
+.left{
+    float: left;
+    width:60%;
+    margin-right:50px;
+    margin-bottom: 20px;
+}
+
+h1{
+    width:100%;
+    border-left: 5px solid black;
+    border-bottom: 5px solid gray;
+    padding-left:5px;
+}
+
+form{
+    width:100%;
+    background-color: #fbfbfb;
+    border:3px solid #ebebeb;
+    padding:10px 10px;
+    margin-bottom: 20px;
+}
+
+form h3{
+    font-size: 20px;
+    border-left:5px solid red;
+    padding-left: 10px;
+}
+
+.text,.submit{
+    margin-bottom: 15px;
+}
+
+.text{
+    border:1px solid lightgray;
+}
+
+.submit{
+    background-color: gray;
+    color:white;
+    border-bottom:3px solid #202020;
+    border-radius:3px;
+}
+
+.article{
+    width:100%;
+    background-color:#fbfbfb;
+    border:3px solid #ebebeb;
+    padding:0px 10px;
+    margin-bottom:5px;
+}
+
+.article h3{
+    border-bottom:2px solid #ebebeb;
+}
+
+.right{
+    float:left;
+    width:35%;
+    margin-top:30px;
+}
+
+.sub h2{
+    border-bottom: 5px solid #ebebeb;
+}
+
+.sub li{
+    list-style: none;
+}
+
+footer{
+    clear:left;
+    width:100%;
+    height:60px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    line-height: 60px;
+}
