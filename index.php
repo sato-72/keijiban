@@ -8,6 +8,14 @@
     </head>
     
     <body>
+    <?php
+        
+     mb_internal_encoding("utf8");
+     $pdo = new PDO("mysql:dbname=sato;host=localhost;","root","");
+     $stmt = $pdo->query("select * from 4each_keijiban");
+        
+    ?>
+        
         <div class="logo"><img src="4eachblog_logo.jpg"></div>
         <header>
             <div class="menu">
@@ -37,17 +45,18 @@
                     <input type="submit" class="submit" value="投稿する">
                 </form>
                 
-                <div class="article">
-                    <h3>タイトル</h3>
-                    <p>記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。</p>
-                    <p>posted by 通りすがり</p>
-                </div>
+                <?php
                 
-                <div class="article">
-                    <h3>タイトル</h3>
-                    <p>記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。</p>
-                    <p>posted by 通りすがり</p>
-                </div>
+                while ($row = $stmt->fetch()) {
+                    
+                    echo "<div class="article">";
+                    echo "<h3>タイトル</h3>";
+                    echo "<p>記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。</p>";
+                    echo "<p>posted by 通りすがり</p>";
+                    echo "</div>";
+                }
+                
+                ?>
             </div>
             
             <div class="right">
